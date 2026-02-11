@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* ================= CATEGORIES ================= */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-3">
             Featured Categories
@@ -101,24 +101,23 @@ export default function Home() {
         </div>
 
         {/* 🔥 MOBILE SAFE GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-7xl mx-auto">
           {categories.map((category) => (
             <Link key={category.id} href={category.link}>
-              <div className="group cursor-pointer rounded-xl shadow-lg overflow-hidden bg-white hover:shadow-xl transition">
+              <div className="group cursor-pointer rounded-xl shadow-lg bg-white hover:shadow-xl transition p-3">
 
                 {/* IMAGE (Responsive fix here) */}
-                <div className="relative w-full aspect-[4/3]">
                   <Image
                     src={category.image}
                     alt={category.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition duration-300"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-xl object-cover"
                   />
-                </div>
 
                 {/* TEXT */}
-                <div className="p-4">
-                  <h3 className="text-lg md:text-2xl font-bold text-primary">
+                <div className="p-3">
+                    <h3 className="text-base md:text-xl font-bold text-primary mt-2">
                     {category.name}
                   </h3>
 
