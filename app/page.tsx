@@ -9,27 +9,30 @@ import { MessageCircle, Phone, Instagram } from 'lucide-react';
 
 export default function Home() {
   /* =============================
-     FIXED IMAGE PATHS HERE ✅
+     CATEGORY DATA
   ============================= */
   const categories = [
     {
       id: 'tiles',
       name: 'Tiles',
-      description: 'Explore our premium collection of ceramic, porcelain, and decorative tiles',
+      description:
+        'Explore our premium collection of ceramic, porcelain, and decorative tiles',
       image: '/categories/tiles.jpg',
       link: '/tiles',
     },
     {
       id: 'stone',
       name: 'Stone',
-      description: 'Natural stone products for elegant home and commercial spaces',
+      description:
+        'Natural stone products for elegant home and commercial spaces',
       image: '/categories/stone.jpg',
       link: '/stone',
     },
     {
       id: 'bathware',
       name: 'Bathware',
-      description: 'Complete bathroom solutions with premium fixtures and fittings',
+      description:
+        'Complete bathroom solutions with premium fixtures and fittings',
       image: '/categories/bathware.jpg',
       link: '/bathware',
     },
@@ -60,7 +63,7 @@ export default function Home() {
 
           {/* Text */}
           <div>
-            <h1 className="text-5xl font-serif font-bold text-primary mb-4">
+            <h1 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-4">
               Premium Tiles & Bathware Collection
             </h1>
 
@@ -68,9 +71,11 @@ export default function Home() {
               Your one-stop destination for premium tiles, natural stone and luxury bathware.
             </p>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 flex-wrap">
               <Link href="/tiles">
-                <Button className="bg-accent text-white">View Catalogue</Button>
+                <Button className="bg-accent text-white">
+                  View Catalogue
+                </Button>
               </Link>
 
               <a href="https://wa.me/919587800110" target="_blank">
@@ -87,7 +92,7 @@ export default function Home() {
       {/* ================= CATEGORIES ================= */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto text-center mb-14">
-          <h2 className="text-4xl font-serif font-bold text-primary mb-3">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-3">
             Featured Categories
           </h2>
           <p className="text-gray-600">
@@ -95,13 +100,14 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        {/* 🔥 MOBILE SAFE GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
           {categories.map((category) => (
             <Link key={category.id} href={category.link}>
-              <div className="group cursor-pointer">
-                
-                {/* Image */}
-                <div className="relative h-72 rounded-xl overflow-hidden shadow-lg">
+              <div className="group cursor-pointer rounded-xl shadow-lg overflow-hidden bg-white hover:shadow-xl transition">
+
+                {/* IMAGE (Responsive fix here) */}
+                <div className="relative w-full aspect-[4/3]">
                   <Image
                     src={category.image}
                     alt={category.name}
@@ -110,18 +116,20 @@ export default function Home() {
                   />
                 </div>
 
-                {/* Text */}
-                <h3 className="text-2xl font-bold mt-4 text-primary">
-                  {category.name}
-                </h3>
+                {/* TEXT */}
+                <div className="p-4">
+                  <h3 className="text-lg md:text-2xl font-bold text-primary">
+                    {category.name}
+                  </h3>
 
-                <p className="text-gray-600 text-sm mt-2">
-                  {category.description}
-                </p>
+                  <p className="text-gray-600 text-sm mt-2">
+                    {category.description}
+                  </p>
 
-                <span className="text-accent font-semibold text-sm mt-3 inline-block">
-                  Explore →
-                </span>
+                  <span className="text-accent font-semibold text-sm mt-3 inline-block">
+                    Explore →
+                  </span>
+                </div>
               </div>
             </Link>
           ))}
@@ -131,7 +139,9 @@ export default function Home() {
       {/* ================= CONTACT ================= */}
       <section className="py-20 px-6 bg-secondary">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-primary mb-10">Get in Touch</h2>
+          <h2 className="text-3xl font-bold text-primary mb-10">
+            Get in Touch
+          </h2>
 
           <div className="bg-primary text-white rounded-xl p-10">
             {contacts.map((contact) => (
@@ -145,7 +155,10 @@ export default function Home() {
               </a>
             ))}
 
-            <a href="https://wa.me/919587800110" className="block mt-4 hover:text-accent">
+            <a
+              href="https://wa.me/919587800110"
+              className="block mt-4 hover:text-accent"
+            >
               <MessageCircle className="inline w-4 h-4 mr-2" />
               WhatsApp
             </a>
