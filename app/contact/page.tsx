@@ -66,7 +66,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-bold text-primary mb-2">WhatsApp</h3>
               <a
-                href="https://wa.me/919782717511"
+                href="https://wa.me/919587800110"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-600 hover:underline text-sm"
@@ -196,7 +196,7 @@ export default function ContactPage() {
                     Quick response and easy communication for your convenience
                   </p>
                   <a
-                    href="https://wa.me/919782717511"
+                    href="https://wa.me/919587800110"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm font-semibold"
@@ -214,12 +214,12 @@ export default function ContactPage() {
                     Check out our latest products and showroom updates
                   </p>
                   <a
-                    href="https://www.instagram.com/varmoratiles_bikaner"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block text-pink-600 hover:text-pink-700 font-semibold"
                   >
-                    @varmoratiles_bikaner
+                    @gedharsteel
                   </a>
                 </div>
 

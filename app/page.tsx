@@ -53,7 +53,7 @@ export default function Home() {
                   width="100%"
                   height="100%"
                   src="https://www.youtube.com/embed/phauCwD_Hrk"
-                  title="Varmora Showroom Tour"
+                  title="Gedhar Steel Showroom Tour"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -68,7 +68,7 @@ export default function Home() {
                 Premium Tiles & Bathware Collection
               </h1>
               <p className="text-lg md:text-lg text-gray-600 mb-8 leading-relaxed text-balance">
-                Welcome to Varmora - your one-stop destination for premium tiles, natural stone, and luxury bathware. Watch our showroom tour and discover the finest quality products for your dream home.
+                Welcome to Gedhar Steel Sturring & Building Material Store - your one-stop destination for premium tiles, natural stone, and luxury bathware. Watch our showroom tour and discover the finest quality products for your dream home.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/tiles">
@@ -79,7 +79,7 @@ export default function Home() {
                     View Catalogue
                   </Button>
                 </Link>
-                <a href="https://wa.me/919782717511" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/919587800110" target="_blank" rel="noopener noreferrer">
                   <Button
                     size="lg"
                     variant="outline"
@@ -141,7 +141,7 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-secondary px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-12 text-center">
-            Why Choose Varmora
+            Why Choose Gedhar Steel Sturring & Building Material Store
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -245,7 +245,7 @@ export default function Home() {
                     WhatsApp
                   </h4>
                   <a
-                    href="https://wa.me/919782717511"
+                    href="https://wa.me/919587800110"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm hover:text-accent transition-colors"
@@ -260,12 +260,12 @@ export default function Home() {
                     Instagram
                   </h4>
                   <a
-                    href="https://www.instagram.com/varmoratiles_bikaner"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm hover:text-accent transition-colors"
                   >
-                    @varmoratiles_bikaner
+                    @gedharsteel
                   </a>
                 </div>
 

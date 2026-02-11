@@ -64,7 +64,7 @@ export default function StoneCatalogue() {
             timeless beauty for your home and commercial projects.
           </p>
           <div className="mt-6">
-            <a href="https://varmora.com/stone-catalogue/" target="_blank" rel="noopener noreferrer">
+            <a href="#" target="_blank" rel="noopener noreferrer">
               <Button className="bg-accent hover:bg-orange-600 text-white rounded-lg font-semibold">
                 <ExternalLink className="w-4 h-4 mr-2" />
                 View Full Stone Catalogue

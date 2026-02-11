@@ -54,7 +54,7 @@ export default function BathwareCatalogue() {
             fixtures, discover quality solutions for modern living.
           </p>
           <div className="mt-6">
-            <a href="https://varmora.com/bathware-catalogue/" target="_blank" rel="noopener noreferrer">
+            <a href="#" target="_blank" rel="noopener noreferrer">
               <Button className="bg-accent hover:bg-orange-600 text-white rounded-lg font-semibold">
                 <ExternalLink className="w-4 h-4 mr-2" />
                 View Full Bathware Catalogue

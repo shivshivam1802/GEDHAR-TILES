@@ -78,10 +78,10 @@ export default function TilesCatalogue() {
             statements, find the perfect tiles for your project.
           </p>
           <div className="mt-6">
-            <a href="https://varmora.com/tiles-catalogue/" target="_blank" rel="noopener noreferrer">
+            <a href="#" target="_blank" rel="noopener noreferrer">
               <Button className="bg-accent hover:bg-orange-600 text-white rounded-lg font-semibold">
                 <ExternalLink className="w-4 h-4 mr-2" />
-                View Full Catalogue on Varmora.com
+                View Full Tiles Catalogue
               </Button>
             </a>
           </div>

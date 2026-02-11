@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ['latin'] })
 const _geistMono = Geist_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Varmora Tiles - Premium Tiles, Stone & Bathware',
-  description: 'Discover premium tiles, stone, and bathware collections from Varmora. Explore our curated showroom of high-quality products for your home and business.',
+  title: 'Gedhar Steel Sturring & Building Material Store - Premium Tiles, Stone & Bathware',
+  description: 'Discover premium tiles, stone, and bathware collections from Gedhar Steel Sturring & Building Material Store. Explore our curated showroom of high-quality products for your home and business.',
   generator: 'v0.app',
   viewport: {
     width: 'device-width',

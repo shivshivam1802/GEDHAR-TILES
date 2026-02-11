@@ -25,7 +25,7 @@ export function Header() {
               <span className="text-white font-bold text-sm">V</span>
             </div>
             <span className="font-serif text-lg font-semibold text-primary hidden sm:inline">
-              Varmora
+              Gedhar Steel
             </span>
           </Link>
 
@@ -45,7 +45,7 @@ export function Header() {
           {/* Contact Actions */}
           <div className="flex items-center gap-4">
             <a
-              href="https://wa.me/919782717511"
+              href="https://wa.me/919587800110"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-sm"
@@ -80,7 +80,7 @@ export function Header() {
               </Link>
             ))}
             <a
-              href="https://wa.me/919782717511"
+              href="https://wa.me/919587800110"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-sm mt-4"
