@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Menu, X, Phone, MessageCircle } from 'lucide-react';
+import { Menu, X, MessageCircle } from 'lucide-react';
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,14 +18,18 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
 
-            <span className="font-serif text-lg font-semibold text-primary hidden sm:inline">
-              Gedhar Steel Sturring & Building Material Store
-            </span>
+        {/* Top Bar */}
+        <div className="flex items-center justify-between h-16">
+
+          {/* Logo / Brand Name */}
+          <Link
+            href="/"
+            className="text-lg sm:text-xl font-semibold text-primary whitespace-nowrap"
+          >
+            Gedhar Tiles
           </Link>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -33,15 +37,18 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                className="text-sm font-medium hover:text-accent transition-colors"
               >
                 {link.label}
               </Link>
             ))}
           </nav>
 
-          {/* Contact Actions */}
-          <div className="flex items-center gap-4">
+
+          {/* Right Actions */}
+          <div className="flex items-center gap-3">
+
+            {/* WhatsApp */}
             <a
               href="https://wa.me/919587800110"
               target="_blank"
@@ -49,8 +56,10 @@ export function Header() {
               className="hidden sm:flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-sm"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>WhatsApp</span>
+              WhatsApp
             </a>
+
+            {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden p-2 hover:bg-secondary rounded-lg transition-colors"
@@ -64,30 +73,33 @@ export function Header() {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+
+        {/* Mobile Menu */}
         {isOpen && (
-          <nav className="md:hidden pb-4 border-t border-border">
+          <nav className="md:hidden pb-4 border-t border-border mt-2 space-y-2">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="block py-2 text-sm font-medium text-foreground hover:text-accent transition-colors"
                 onClick={() => setIsOpen(false)}
+                className="block py-2 text-sm font-medium hover:text-accent"
               >
                 {link.label}
               </Link>
             ))}
+
             <a
               href="https://wa.me/919587800110"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-sm mt-4"
+              className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg text-sm mt-3"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>WhatsApp</span>
+              WhatsApp
             </a>
           </nav>
         )}
+
       </div>
     </header>
   );
