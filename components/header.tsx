@@ -21,11 +21,9 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-              <span className="text-white font-bold text-sm">V</span>
-            </div>
+
             <span className="font-serif text-lg font-semibold text-primary hidden sm:inline">
-              Gedhar Steel
+              Gedhar Steel Sturring & Building Material Store
             </span>
           </Link>
 
