@@ -150,7 +150,7 @@ export function Footer() {
           </div>
 
           {/* Building Materials */}
-          <div className="bg-secondary rounded-lg p-6 mb-8">
+         <div className="bg-slate-900 rounded-lg p-6 mb-8">
             <h4 className="font-semibold mb-4 text-white">All Types of Building Materials</h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-300">
               <div className="flex items-center gap-2">
